@@ -16,7 +16,7 @@ HOST="my_host"
 DIRPATHONHOST="/any_path/"
 
 rsync -CavzR -e ssh --exclude 'cache' --exclude 'logs' application/ system/ $USER@$HOST:$DIRPATHONHOST
-<pre>
+</pre>
 
 USER: nome do usuário usado para logar por ssh
 HOST: host que será acessado
