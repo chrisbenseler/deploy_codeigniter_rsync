@@ -10,15 +10,13 @@ Com isso, o desenvolvedor pode sincronizar direto da sua workstation para o serv
 Configuração
 ============
 
-``
-#!/bin/bash
-
+<pre>
 USER="my_user"
 HOST="my_host"
 DIRPATHONHOST="/any_path/"
 
 rsync -CavzR -e ssh --exclude 'cache' --exclude 'logs' application/ system/ $USER@$HOST:$DIRPATHONHOST
-``
+<pre>
 
 USER: nome do usuário usado para logar por ssh
 HOST: host que será acessado
